@@ -1,2 +1,18 @@
+@font-face {
+    font-family: Bignoodle;
+    src: url('../assets/fonts/big_noodle_titling_oblique.ttf');
+}
+
+body {
+    padding-top: 16px;
+}
+
+h1, h2 {
+    margin: 0;
+    font-family: Bignoodle, sans-serif;
+    font-weight: 400;
+}
+
 @import './vars.scss';
 @import './container.scss';
+@import './header.scss';

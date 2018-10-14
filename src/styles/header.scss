@@ -1,0 +1,26 @@
+@import './vars.scss';
+
+header {
+    text-align: center;
+
+    img {
+        max-width: 70px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        color: $color-primary;
+        font-size: 48px;
+        margin-bottom: 0px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h1 + h2 {
+        margin-top: -5px;
+    }
+
+}
