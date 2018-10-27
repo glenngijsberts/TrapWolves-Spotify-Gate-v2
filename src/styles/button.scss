@@ -1,0 +1,43 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: none;
+    display: inline-flex;
+    font-size: 16px;
+    line-height: 1.5;
+    position: relative;
+    white-space: nowrap;
+    text-align: center;
+    font-weight: lighter;
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+
+    &.button-spotify {
+        border: transparent;
+        background-color: $color-primary;
+        color: $color-white;
+        width: 100%;
+        min-width: 280px;
+        @media(min-width: 768px) {
+            width: auto;
+        }
+
+        &:hover, &:focus {
+            background-color: darken($color-primary, 5%);
+            transition: all 300ms ease-in-out;
+        }
+
+    }
+
+    .spinner {
+        margin-left: 10px;
+    }
+
+    &--icon {
+        margin-left: 10px;
+    }
+
+}

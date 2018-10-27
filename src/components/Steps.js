@@ -1,17 +1,18 @@
 import React from 'react'
+import classNames from 'classnames'
 
-const Step = ({ number, label }) => (
-    <div className="steps--step">
+const Step = ({ number, label, active }) => (
+    <div className={classNames('steps--step', { active })}>
         <span className="steps--step--number">{number}</span>
         <span className="steps--step--label">{label}</span>
     </div>
 )
 
-const Steps = () => (
+const Steps = ({ currentStep }) => (
     <section className="steps">
-        <Step number={1} label="Follow" />
-        <Step number={2} label="Information" />
-        <Step number={3} label="Complete" />
+        <Step number={1} label="Follow" active={currentStep === 1} />
+        <Step number={2} label="Information" active={currentStep === 2}  />
+        <Step number={3} label="Complete" active={currentStep === 3} />
     </section>
 )
 
