@@ -12,17 +12,20 @@ import Logo from 'assets/img/logo_trapwolves.png'
 import Arrow from 'assets/img/Arrow.png'
 import Shirts from 'assets/img/Shirts.png'
 
+// Utils
+import spotify_token from 'utils/Spotify'
+
 class App extends Component {
 
   state = {
     currentStep: 1,
     loaded: false,
+    token: null,
   }
 
-  componentDidMount() {
-    setTimeout(() => {
-      this.setState({loaded: true})
-    }, 2000)
+  async componentDidMount() {
+    const token = await spotify_token
+    console.log(token)
   }
 
   render() {

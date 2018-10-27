@@ -5,7 +5,7 @@ const StepsContent = ({ currentStep }) => {
 
     if (currentStep === 1) return (
         <section className="section-content">
-            <button class="button button-spotify">
+            <button className="button button-spotify">
                 Login with Spotify to follow us
                 <span className="button--icon"><i className="fa fa-spotify"></i></span>
             </button>
